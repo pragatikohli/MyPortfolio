@@ -1,0 +1,160 @@
+/*-------------------FONTS-------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Poppins:wght@300;400;500;600;700;800&display=swap");
+/*--------------------Website Theme----------------------*/
+:root {
+  --hue-1: 257;
+  --hue-2: 47;
+  --main-color-1: hsl(var(--hue-1), 100%, 60%);
+  --main-color-dark-1: hsl(var(--hue-1), 69%, 50%);
+  --main-color-2: hsl(var(--hue-2), 100%, 61%);
+  --main-color-dark-2: hsl(var(--hue-2), 82%, 55%);
+  --section-padding: 7rem;
+}
+
+body {
+  --bg-color: hsl(var(--hue-1), 100%, 97%);
+  --bg-color-1: hsl(var(--hue-1), 100%, 95.5%);
+  --bg-color-2: #fff;
+  --bg-color-3: hsl(var(--hue-1), 100%, 98%);
+  --bg-color-transparent: rgba(255, 255, 255, 0.6);
+  --heading-color: hsl(var(--hue-1), 61%, 24%);
+  --text-color: hsl(var(--hue-1), 17%, 63%);
+}
+
+body.dark {
+  --bg-color: hsl(var(--hue-1), 19%, 15%);
+  --bg-color-1: hsl(var(--hue-1), 21%, 11%);
+  --bg-color-2: hsl(var(--hue-1), 23%, 19%);
+  --bg-color-3: hsl(var(--hue-1), 23%, 24%);
+  --bg-color-transparent: hsla(var(--hue-1), 23%, 19%, 0.6);
+  --heading-color: hsl(var(--hue-1), 100%, 95%);
+  --text-color: hsl(var(--hue-1), 14%, 51%);
+}
+
+/*--------------------General Styles--------------------*/
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  overflow-x: hidden;
+  background-color: var(--bg-color);
+  font-family: "Poppins", sans-serif;
+}
+::selection {
+  background-color: hsla(var(--hue-1), 100%, 60%, 0.9);
+  color: #fff;
+}
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+/*-------------------Reusable CSS Code-----------------------*/
+.container {
+  position: relative;
+  width: 100%;
+  max-width: 75rem;
+  padding: 0 1.5rem;
+  margin: 0 auto;
+}
+.logo {
+  margin-right: 1.5rem;
+  font-family: "Abril Fatface", cursive;
+  font-size: 1.5rem;
+  color: var(--heading-color);
+  letter-spacing: 1px;
+  transition: 0.3s;
+}
+.logo span {
+  color: var(--main-color-1);
+}
+/*-------------------Navbar Styling-----------------------*/
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  transition: 0.3s;
+}
+header.scrolled {
+  background-color: var(--bg-color-transparent);
+  box-shadow: 0 5px 20px 0.1px rgba(0, 0, 0, 0.1);
+}
+nav.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+header .logo {
+  height: 120px;
+  line-height: 120px;
+}
+header.scrolled .logo {
+  height: 80px;
+  line-height: 80px;
+}
+.links {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+}
+.links ul {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.nav-link {
+  display: inline-block;
+  margin: 0 1rem;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  color: var(--text-color);
+  font-weight: 500;
+  opacity: 0.9;
+  transition: 0.3s;
+}
+/* .nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 10px;
+  border-radius: 5px;
+  background-color: var(--main-color-1);
+  bottom: 0;
+  left: -5px;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.3s;
+} */
+.nav-link:hover {
+  color: var(--heading-color);
+}
+/* .nav-link:hover::after {
+  width: 100%;
+  opacity: 0.2;
+} */
+.toggle-btn {
+  color: var(--heading-color);
+  min-width: 40px;
+  height: 40px;
+  background-color: var(--bg-color-2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  cursor: pointer;
+  box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.05);
+  transition: 0.3s;
+}
+.toggle-btn:hover {
+  filter: brightness(97%);
+}
