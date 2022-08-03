@@ -13,46 +13,50 @@
     <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js"></script>
   </head>
   <body>
+    <div class="overlay"></div>
     <header>
       <nav class="container">
         <a href="#" class="logo">Portf<span>olio.</span></a>
         <div class="links">
           <ul>
             <li>
-              <a href="#" class="nav-link">Home</a>
+              <a href="#home" class="nav-link">Home</a>
             </li>
             <li>
-              <a href="#" class="nav-link">About</a>
+              <a href="#about" class="nav-link">About</a>
             </li>
             <li>
-              <a href="#" class="nav-link">Education</a>
+              <a href="#skills" class="nav-link">Skills</a>
             </li>
             <li>
-              <a href="#" class="nav-link">Skills</a>
+              <a href="#education" class="nav-link">Education</a>
             </li>
             <li>
-              <a href="#" class="nav-link">Contact</a>
+              <a href="#contact" class="nav-link">Contact</a>
             </li>
           </ul>
           <i class="fa-solid fa-moon toggle-btn"></i>
         </div>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </nav>
     </header>
     <main>
-      <section class="showcase-area">
+      <section class="showcase-area" id="home">
         <div class="container">
           <div class="showcase-info">
             <h3 class="sub-heading">Frontend Developer</h3>
             <h1 class="heading">Pragati Kohli</h1>
             <p class="text">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo,
-              adipisci.
+              A 3rd year student learning fullstack development and showcasing the skills throught projects to become industry-ready.
             </p>
             <div class="cta">
               <a href="mailto:pragatikohli12@gmail.com" class="btn"
                 >Contact Me</a
               >
-              <a href="#" download class="btn secondary-btn">Download CV</a>
+              <a href="./assets/cv.pdf" download class="btn secondary-btn">Download CV</a>
             </div>
           </div>
           <div class="showcase-image">
@@ -60,7 +64,7 @@
           </div>
         </div>
       </section>
-      <section class="about section">
+      <section class="about section" id="about">
         <div class="container">
           <div class="about-grid">
             <div class="about-card">
@@ -90,7 +94,7 @@
           </div>
         </div>
       </section>
-      <section class="skills section">
+      <section class="skills section" id="skills">
         <div class="container">
           <div class="skills-box">
             <div class="box-heading">
@@ -98,9 +102,9 @@
               <h1 class="heading">Let me showcase these to you</h1>
               <div class="box-desc">
                 <p class="text">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci laudantium eveniet commodi nihil consequatur! Sit eum error quia illum sed officia voluptatibus iusto aut ab, assumenda asperiores dolorum non quisquam? Consequuntur accusamus tempore numquam, delectus sed nostrum. Dicta vero doloribus obcaecati iusto, delectus veniam recusandae commodi illum, eaque, culpa quis!
+                  Talking about my soft skills, I am good at communication, team management, planning and organizing. The below representation very well tells about my technical skills and my cappbility in the particular domain. I am also good at technical content writing and also got some experience in this by publishing my content at geekforgeeks(GFG).
                 </p>
-                <a href="#" class="btn">Hire Me</a>
+                <a href="mailto:pragatikohli12@gmail.com" class="btn">Hire Me</a>
               </div>
             </div>
             <div class="skills-wrap">
@@ -152,7 +156,7 @@
           </div>
         </div>
       </section>
-      <section class="education section">
+      <section class="education section" id="education">
         <div class="container">
           <div class="education-header">
             <div class="education-title">
@@ -192,7 +196,7 @@
           </div>
         </div>
       </section>
-      <section class="contact section">
+      <section class="contact section" id="contact">
         <div class="container">
           <div class="contact-info">
             <h3 class="sub-heading">Contact me</h3>
@@ -212,6 +216,23 @@
         </div>
       </section>
     </main>
+    <footer>
+      <div class="container">
+        <a href="#" class="logo">Portf<span>olio.</span></a>
+        <p class="text">$copy; Copyright 2022. All rights reserved</p>
+        <ul class="social-media">
+          <li>
+            <a href="https://www.facebook.com/profile.php?id=100069381438475" class="social-link"><i class="fa-brands fa-facebook"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/kohli_pragati?t=pgdPDEFdNFk8jf6ZyAfQfw&s=09" class="social-link"><i class="fa-brands fa-twitter icons" ></i></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/pragatikohlii/" class="social-link"><i class="fa-brands fa-instagram"></i></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
     <!-- ----------------JS FILE ---------------------------->
     <script src="main.js"></script>
   </body>
